@@ -3,6 +3,7 @@
 dubbo基本应用和zookeeper关联使用
 
 1.什么是dubbo：
+
    dubbo主要是一个分布式服务治理解决方案，那么什么是服务治理？
 
    服务治理主要是针对大规模服务化以后，服务之间的路由、负载均衡、容错机制、服务降级这些问题的解决方案，而Dubbo实现的不仅仅是远程服务通信，还解决了服务路由、负载、降级、容错等功能
@@ -11,10 +12,10 @@ dubbo基本应用和zookeeper关联使用
 
    到目前为止，我们了解到了Dubbo的核心功能，提供服务注册和服务发现以及基于Dubbo协议的远程通信，我想，大家以后不会仅仅只认为Dubbo是一个RPC框架吧。Dubbo从另一个方面来看也可以认为是一个服务治理生态。从目前已经讲过的内容上可以看到。
     
-   1.Dubbo可以支持市面上主流的注册中心
+   （1）Dubbo可以支持市面上主流的注册中心
     
-   2.Dubbo提供了Container的支持，默认提供了3种container。我们可以自行扩展
+   （2）Dubbo提供了Container的支持，默认提供了3种container。我们可以自行扩展
     
-   3.Dubbo对于RPC通信协议的支持，不仅仅是原生的Dubbo协议，它还围绕着rmi、hessian、http、webservice、thrift、rest有了多协议的支持，使得其他rpc框架的应用程序可以快速的切入到dubbo生态中。
+   （3）Dubbo对于RPC通信协议的支持，不仅仅是原生的Dubbo协议，它还围绕着rmi、hessian、http、webservice、thrift、rest有了多协议的支持，使得其他rpc框架的应用程序可以快速的切入到dubbo生态中。
     
    同时，对于多协议的支持，使得不同应用场景的服务，可以选择合适的协议来发布服务，并不一定要使用dubbo提供的长连接方式。
